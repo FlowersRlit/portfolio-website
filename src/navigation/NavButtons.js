@@ -6,7 +6,7 @@ const NavButtons = () => {
     <div className=" hidden gap-6 md:flex">
       <NavLink to="/">Beranda</NavLink>
       <NavLink to="/portfolio">Portfolio</NavLink>
-      <NavLink>Kontak</NavLink>
+      <NavLink to="/kontak">Kontak</NavLink>
     </div>
   );
 };
