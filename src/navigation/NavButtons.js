@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavButtons = () => {
   return (
-    <div className="mx-6">
-      <a id="Beranda">Beranda</a>
-      <a id="Portfolio">Portfolio</a>
-      <a id="Kontak">Kontak</a>
+    <div className=" hidden gap-6 md:flex">
+      <NavLink to="/">Beranda</NavLink>
+      <NavLink to="/portfolio">Portfolio</NavLink>
+      <NavLink>Kontak</NavLink>
     </div>
   );
 };
