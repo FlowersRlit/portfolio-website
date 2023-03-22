@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import NavButtons from "./NavButtons";
 
 const Navbar = () => {
-  const [theme, setTheme] = React.useState("garden");
+  const [theme, setTheme] = useState("garden");
   const toggleTheme = () => {
     if (theme === "garden") {
       setTheme("night");
@@ -9,31 +11,67 @@ const Navbar = () => {
       setTheme("garden");
     }
   };
+  useEffect(() => {
+    document.querySelector("html").setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
-    /* A JSX comment */
-    //yoo
-    <div className="navbar bg-base-100 drop-shadow-md">
+    /* start navbar */
+    <div className="navbar sticky top-0 bg-secondary drop-shadow-md">
       <div className="container">
         <div className="flex-none">
           {/* burger button */}
-          <button className="btn-ghost btn-square btn visible md:invisible">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block h-5 w-5 stroke-current">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+          <div className="dropdown md:hidden">
+            {/* tabIndex={0} so the menu appears */}
+            <label tabIndex={0} className="py-auto swap swap-rotate mx-5">
+              <input type="checkbox" />
+              {/* burger icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="swap-on h-5 w-5 fill-current stroke-current">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+
+              {/* cross icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="swap-off h-5 w-5 fill-current stroke-current">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </label>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu w-52 bg-base-100 p-2 shadow">
+              {/* pop up */}
+              <li>
+                <Link>Portfolio</Link>
+              </li>
+              <li>
+                <Link>Kontak</Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex-1">
-          <a className="btn-ghost btn text-xl normal-case"></a>
+
+        {/* buttons */}
+        <div className="flex w-full justify-center">
+          <NavButtons />
         </div>
+
         <label className="swap-rotate swap">
           <input type="checkbox" onClick={toggleTheme} />
           {/* rotate image here */}
