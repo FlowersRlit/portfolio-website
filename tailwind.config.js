@@ -7,17 +7,20 @@ module.exports = {
         center: true,
         padding: "1rem",
       },
+      fontFamily: {
+        montserrat: "'Montserrat', sans-serif"
+      },
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["synthwave"],
+    themes: ["garden", "night"],
     styled: true,
     base: true,
     utils: true,
     logs: true,
     rtl: false,
     prefix: "",
-    darkTheme: "dark",
+    darkTheme: "night",
   },
 };
