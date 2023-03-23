@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import NavButtons from "./NavButtons";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("garden");
+  const [theme, setTheme] = useState("calmblu");
   const toggleTheme = () => {
-    if (theme === "garden") {
-      setTheme("night");
+    if (theme === "nightblu") {
+      setTheme("calmblu");
     } else {
-      setTheme("garden");
+      setTheme("nightblu");
     }
   };
   useEffect(() => {
@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* burger button */}
           <div className="dropdown md:hidden">
             {/* tabIndex={0} so the menu appears */}
-            <label tabIndex={0} className="py-auto swap swap-rotate mx-5">
+            <label tabIndex={0} className="py-auto swap-rotate swap mx-5">
               <input type="checkbox" />
               {/* burger icon */}
               <svg
