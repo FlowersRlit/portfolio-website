@@ -15,7 +15,7 @@ const GreetingsCard = () => {
           Greetings.
         </h1>
         <p className="text-xs md:text-base">
-          Halo, namaku Chika Kirana Syafruddin
+          Hey, my name is Chika Kirana Syafruddin.
         </p>
       </div>
     </div>
