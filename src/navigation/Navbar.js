@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NavButtons from "./NavButtons";
 
 const Navbar = () => {
@@ -45,10 +45,13 @@ const Navbar = () => {
               className="dropdown-content menu w-52 bg-base-100 p-2 shadow">
               {/* pop up */}
               <li>
-                <Link>Portfolio</Link>
+                <NavLink to="/">Beranda</NavLink>
               </li>
               <li>
-                <Link>Kontak</Link>
+                <NavLink to="/portfolio">Portfolio</NavLink>
+              </li>
+              <li>
+                <NavLink to="/kontak">Kontak</NavLink>
               </li>
             </ul>
           </div>
