@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { BsLine } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
+import { SiDiscord } from "react-icons/si";
 
 const Linktree = () => {
   return (
@@ -36,8 +37,14 @@ const Linktree = () => {
         {/* Forth link */}
         <ContactsData
           Name="GitHub"
-          Svg={<FiGithub className="h5 w-5 place-self-center" />}
+          Svg={<FiGithub className="h-5 w-5 place-self-center" />}
           Link="https://github.com/FlowersRlit"
+        />
+        {/* Fifth link */}
+        <ContactsData
+          Name="Discord"
+          Svg={<SiDiscord className="h-5 w-5 place-self-center" />}
+          Link="https://discord.gg/JtaD2TDq"
         />
       </div>
     </div>
