@@ -2,6 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
+    // footer start
     <div className="flex w-full justify-center bg-primary">
       <p className="my-4 max-w-sm text-[10px] text-white sm:text-sm md:max-w-none md:text-base">
         Copyright &copy;{" "}

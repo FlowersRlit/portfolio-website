@@ -7,6 +7,7 @@ import Footer from "../footer/Footer";
 const Portfolio = () => {
   return (
     <>
+      {/* portfolio page start */}
       <div className="container h-auto">
         <Quote />
         <Cards />

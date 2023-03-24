@@ -3,6 +3,7 @@ import avatar from "../assets/kelas.jpg";
 
 const GreetingsCard = () => {
   return (
+    // profile picture
     <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
       <div className="drop h-40 w-40 overflow-hidden rounded-2xl bg-black shadow-primary">
         <img
@@ -10,6 +11,7 @@ const GreetingsCard = () => {
           className="h-full w-full object-cover object-bottom"
         />
       </div>
+      {/* text card */}
       <div className="text-center md:text-start">
         <h1 className="text-lg font-semibold text-primary md:text-5xl">
           Greetings.

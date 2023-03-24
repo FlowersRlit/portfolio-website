@@ -5,7 +5,7 @@ const Quote = () => {
   return (
     // headline
     <h1 className="my-20 max-w-6xl pl-10 text-left text-6xl font-semibold leading-tight text-primary-content">
-      "Your scores from{" "}
+      "Your scores from {/* typing effect start */}
       <ReactTypingEffect
         className="bg-primary-content text-secondary"
         speed={300}
@@ -13,6 +13,7 @@ const Quote = () => {
         text={["college", "school"]}
         cursor="_"
       />{" "}
+      {/* typing effect end */}
       <span className="text-secondary-focus">don't matter</span> as long as
       you're <span className="italic">talented</span>."
     </h1>

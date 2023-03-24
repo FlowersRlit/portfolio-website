@@ -8,6 +8,7 @@ import Linktree from "./kontak/Linktree";
 function App() {
   return (
     <div className="font-montserrat">
+      {/* main components that will always be shown whenever user moves bwtween pages */}
       <Navbar />
       <div className="">
         <Routes>
