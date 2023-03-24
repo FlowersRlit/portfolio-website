@@ -24,12 +24,8 @@ const Linktree = () => {
         {/* second link */}
         <ContactsData
           Name="Instagram"
-          Svg={
-            <GrInstagram
-              className="h-5 w-5 place-self-center"
-              Link="https://www.instagram.com/chikakikoek/"
-            />
-          }
+          Svg={<GrInstagram className="h-5 w-5 place-self-center" />}
+          Link="https://www.instagram.com/chikakikoek/"
         />
         {/* Third link */}
         <ContactsData
