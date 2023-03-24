@@ -1,16 +1,35 @@
 import React from "react";
+import AchievementData from "./AchievementData";
+import EHachievement from "../assets/EHachievement.jpg";
+import PiagamOSHK from "../assets/PIAGAM OSHK.jpg";
+import ProgatePython from "../assets/progatepython.png";
 
 const Achievement = () => {
   return (
     <>
+      {/* section title */}
       <h1 className="pt-40 pb-10 text-center text-5xl font-bold text-primary">
         Hall of Acknowledgement
       </h1>
-      <div className="flex items-start justify-between">
-        {/* left section */}
-        <div className="h-20 w-20 border-2 border-red-500"></div>
-        {/* right section */}
-        <div>Hi</div>
+      {/* first card */}
+      <div className="static grid grid-cols-3 items-center gap-10">
+        <AchievementData
+          Title="The Most Dilligent Student & Teacher of The Year"
+          Backgrouond={EHachievement}
+          Caption='Honorable mention of the year "English Teachers" program of 2022.'
+        />
+        {/* second card */}
+        <AchievementData
+          Title="Dewan Eksekutif (DE) OSHK Madrasah Aliyah"
+          Backgrouond={PiagamOSHK}
+          Caption="Sebagai staff Bidang Media Jurnalistik DE-OSHK MA Husnul Khotimah."
+        />
+        {/* third card */}
+        <AchievementData
+          Title="Python Fundamental Course"
+          Background={ProgatePython}
+          Caption="Sertifikat penyelesaian 5 kursus Python Fundamental Progate."
+        />
       </div>
     </>
   );
