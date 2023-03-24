@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     /* start navbar */
-    <div className="navbar sticky top-0 bg-secondary drop-shadow-md">
+    <div className="navbar sticky top-0 z-50 bg-secondary drop-shadow-md">
       <div className="container">
         <div className="flex-none">
           {/* burger button */}
@@ -66,7 +66,7 @@ const Navbar = () => {
           <input type="checkbox" onClick={toggleTheme} />
           {/* rotate image here */}
           <svg
-            className="swap-on h-5 w-5 fill-current"
+            className="swap-on h-5 w-5 fill-secondary-content"
             // swap-on sun
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ const Navbar = () => {
           </svg>
 
           <svg
-            className="swap-off h-5 w-5 fill-current"
+            className="swap-off h-5 w-5 fill-secondary-content"
             // swap-dark crimson moon
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24">
