@@ -8,20 +8,20 @@ const Achievement = () => {
   return (
     <>
       {/* section title */}
-      <h1 className="pt-40 pb-10 text-center text-5xl font-bold text-primary">
+      <h1 className="pb-10 pt-40 text-center text-lg font-bold text-primary md:text-5xl">
         Hall of Acknowledgement
       </h1>
       {/* first card */}
-      <div className="static grid grid-cols-3 items-center gap-10">
+      <div className="static mb-10 grid items-center gap-10 md:grid-cols-3">
         <AchievementData
           Title="The Most Dilligent Student & Teacher of The Year"
-          Backgrouond={EHachievement}
+          Background={EHachievement}
           Caption='Honorable mention of the year "English Teachers" program of 2022.'
         />
         {/* second card */}
         <AchievementData
           Title="Dewan Eksekutif (DE) OSHK Madrasah Aliyah"
-          Backgrouond={PiagamOSHK}
+          Background={PiagamOSHK}
           Caption="Sebagai staff Bidang Media Jurnalistik DE-OSHK MA Husnul Khotimah."
         />
         {/* third card */}

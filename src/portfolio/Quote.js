@@ -4,7 +4,7 @@ import ReactTypingEffect from "react-typing-effect";
 const Quote = () => {
   return (
     // headline
-    <h1 className="my-20 max-w-6xl pl-10 text-left text-6xl font-semibold leading-tight text-primary-content">
+    <h1 className="my-10 pl-5 text-left text-xl font-medium leading-tight text-primary-content md:my-20 md:max-w-6xl md:pl-10 md:text-6xl md:font-semibold">
       "Your scores from {/* typing effect start */}
       <ReactTypingEffect
         className="bg-primary-content text-secondary"

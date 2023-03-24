@@ -11,11 +11,11 @@ const Cards = () => {
   return (
     <>
       {/* section: hobbies */}
-      <h2 className="py-10 text-center text-5xl font-bold text-primary">
+      <h2 className="py-10 text-center text-lg font-bold text-primary md:text-5xl">
         Check out my works.
       </h2>
       {/* first card */}
-      <div className="static grid grid-cols-3 gap-10">
+      <div className="grid gap-8 md:grid-cols-3 md:gap-10">
         <CardsData
           Title="Blogspot"
           Background={rekayasakertas}
